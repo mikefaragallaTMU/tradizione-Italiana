@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOCATIONS: Tradizione Italiane</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="locationspage.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+
+  <div id="navbar">
+        <div id="logo">
+            <a href="tradizione-italiana.html">
+                <h2 id="title">TRADIZIONE<br>ITALIANA</h2>
+            </a>
+        </div>
+        <div id="NavButtons">
+            <a class="learnMoreButtons" id="reserveButton" href="reservationstradizione.html">RESERVATIONS</a>
+            <a class="navPageButtons" href="contactuspage.html">CONTACT US</a>
+            <a class="navPageButtons" href="locationspage.html">LOCATIONS</a>
+            <a class="navPageButtons" href="themenu.html">MENU</a>
+            <a class="navPageButtons" href="about-us.html">OUR STORY</a>
+        </div>
+    </div>
+    
+    <div id="container">
+        <img id="myImage" src="LocationsPageIMG/LocationsPic.jpeg" alt="Your Image">
+        <div id="myText">LOCATIONS</div>
+    </div>
+    <br>
+    <h3>VISIT OUR LOCATIONS</h3>
+    <div id="locationText">
+        <p>Tradizione Italiana, a culinary haven celebrating the essence of authentic Italian cuisine, has become a beloved dining destination with its four enchanting locations. Each venue is a testament to the rich tapestry of Italian flavors, offering a gastronomic journey that captures the heart of Italy. Whether nestled in the bustling city center, overlooking a scenic waterfront, or tucked away in a charming neighborhood, every Tradizione Italiana restaurant beckons guests with an inviting ambiance and a commitment to culinary excellence. From the rustic charm of the first location to the modern sophistication of the latest addition, each setting is designed to transport patrons to the heart of Italy, where tradition meets innovation. With a menu inspired by time-honored recipes and regional specialties, Tradizione Italiana stands as a testament to the enduring allure of Italian gastronomy across its four distinct and delightful locations.</p>
+    </div>
+    <br>
+    <br>
+    <div id="imageContainer">
+        <a href="https://en.wikipedia.org/wiki/Eglinton,_Ontario">
+            <img src="LocationsPageIMG/EGLINTON.png" alt="First Pic" class="image eglinton">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Etobicoke">
+            <img src="LocationsPageIMG/ETOBICOKE.png" alt="Second Pic" class="image etobicoke">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Mississauga">
+            <img src="LocationsPageIMG/SAUGA.png" alt="Third Pic" class="image sauga">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Queen_Street,_Toronto">
+            <img src="LocationsPageIMG/QUEEN.png" alt="Fourth Pic" class="image queen">
+        </a>
+    </div>
+    <br>
+    <br>
+
+    <section class="map">
+        <ul class="clearfix">
+            <div class="animated wow fadeInDown">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5870.0108884875235!2d-79.37739419184415!3d43.66042170026182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb35431c1395%3A0xe8ed8bd69125d6f4!2sToronto%20Metropolitan%20University!5e0!3m2!1sen!2sca!4v1701328289286!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <span class="separator"></span>
+            </div>
+        </ul>
+    </section>
+
+    <h4 class="ourStorySection"><center><b>How To Reach Us</b></center></h4>
+    <div id="locationText">
+        <center>Phone Number: 416-234-5678</center>
+        <br>
+        <center>Fax: 00100 17xxxxxx</center>
+        <br>
+        <center>251 Jarvis St, Toronto, ON M5B 0C3</center>
+        <br>
+        <center><i>Hours open from 10am-11pm</i></center>
+        <br>
+        <!-- Google maps embed here -->
+    </div>
+    <!--  End services  -->
+
+    <footer>
+        <p>&copy; 2023 Tradizione Italiana. All rights reserved. Created by Ryan Allen-Hallam, Maykel Faragalla, Aashana Dhingra, Sujay Rambajue, Iliana Mehmeti, Adesewa Ajomale </p>
+    </footer>
+
+    <script type="text/javascript">
+
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        // When the user scrolls to the top of the page, slide up the navbar (100px out of the top view)
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            }
+            else {
+                document.getElementById("navbar").style.top = "-110px";
+            }
+        }
+    </script>
+</body>
+</html>

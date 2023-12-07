@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME: Tradizione Italiane</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="tradizione-italiana.css">
+
+</head>
+<body>
+
+	<div class="introImg">
+		<img id="nameImage" src="HomePageIMG/TradizioneItalianaBG.png" width="100%" height="10%">
+	</div>
+
+	<div id="ourStorySection" >
+		<img class="divLogos" src="HomePageIMG/colloseumLogo.png" width="100px">
+		<h1 class="subsectionTitle">OUR STORY</h1>
+		<p class="blurbText">Welcome to Tradizione Italiana, where the rich heritage of Italy meets culinary craftsmanship. Immerse yourself in the traditions and contemporary flair that define our culinary haven across Toronto.</p>
+		<a href="about-us.html">
+			<button class="learnMoreButtons">LEARN MORE</button>			
+		</a>
+	</div>
+
+	<div id="ourMenuSection" >
+		<img class="divLogos" src="HomePageIMG/menuScrollLogo.png" width="100px">
+		<h1 class="subsectionTitle">OUR MENU</h1>
+		<p class="blurbText">Embark on a curated journey through Italy's diverse regions, with each dish telling a story of tradition, passion, and the finest ingredients. From classic pasta simplicity to meticulously crafted entrées, experience the symphony of flavours that celebrates the Italian way of life.</p>
+		<a href="themenu.html">
+			<button class="learnMoreButtons">LEARN MORE</button>			
+		</a>
+		
+		
+	</div>
+
+	<div id="navbar">
+        <div id="logo">
+            <a href="tradizione-italiana.html">
+                <h2 id="title">TRADIZIONE<br>ITALIANA</h2>
+            </a>
+        </div>
+        <div id="NavButtons">
+            <a class="learnMoreButtons" id="reserveButton" href="reservationstradizione.html">RESERVATIONS</a>
+            <a class="navPageButtons" href="contactuspage.html">CONTACT US</a>
+            <a class="navPageButtons" href="locationspage.html">LOCATIONS</a>
+            <a class="navPageButtons" href="themenu.html">MENU</a>
+            <a class="navPageButtons" href="about-us.html">OUR STORY</a>
+        </div>
+    </div>
+
+     <footer>
+        <p>&copy; 2023 Tradizione Italiana. All rights reserved. Created by Ryan Allen-Hallam, Maykel Faragalla, Aashana Dhingra, Sujay Rambajue, Iliana Mehmeti, Adesewa Ajomale </p>
+    </footer>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	// When the user scrolls down 20px from the top of the document, slide down the navbar
+	// When the user scrolls to the top of the page, slide up the navbar (100px out of the top view)
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   		document.getElementById("navbar").style.top = "0";
+  		}
+  		else {
+    	document.getElementById("navbar").style.top = "-110px";
+  		}
+	}
+</script>
+</html>

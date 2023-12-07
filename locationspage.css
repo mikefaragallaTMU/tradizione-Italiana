@@ -1,0 +1,192 @@
+@font-face {
+    src: url(Fonts/Inlander-Texture.ttf);
+    font-family: inlander;
+}
+
+body {
+    background-color: #FFE0B2;
+    background-image: url(websiteBorder3.png);
+    background-size: 100%;
+    background-repeat: space repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#navbar {
+  filter: drop-shadow(1px 1px 10px);
+  overflow: hidden;
+  background-color: #F8CB86;
+  position: fixed; 
+  width: 100%; 
+  height: 100px;
+  top: -110px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  border: 2px solid;
+  border-color: #4D2716;
+  z-index: 1000;
+}
+
+#logo{
+    float: left;
+    font-family: inlander;
+    line-height: 30px;
+    margin-top: -20px;
+    padding-left: 20px;
+    color: #4D2716;
+}
+
+#reserveButton {
+    border: 2px solid;
+    border-color: #4D2716;
+    padding: 1px;
+}
+
+#NavButtons {
+    float: right;
+    margin-top: 30px;
+}
+
+#navbar a {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    float: right;
+    display: block;
+    color: #4D2716;
+    text-align: center;
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Belleza', sans-serif;
+}
+
+#navbar a:hover {
+    color: white;
+    background-color: #4D2716;
+}
+
+#ourStorySection {
+    margin-bottom: 50px;
+    border: solid black;
+    position: relative;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+    font-size: 30px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+    margin-top: 80%;
+}
+
+#myImage {
+    display: inline-block;
+    max-width: 70%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+#myText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 124px;
+    font-family: 'Belleza', sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: black;
+}
+
+#locationText {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Belleza', sans-serif;
+}
+
+#imageContainer {
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 100px;
+    border: 5px solid black;
+}
+
+.eglinton {
+    width: 250px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.etobicoke {
+    width: 250px;
+    height: auto;
+}
+
+.sauga {
+    width: 250px;
+    height: auto;
+}
+
+.queen {
+    width: 250px;
+    height: auto;
+}
+
+#map {
+    border: 6px solid #333;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #4D2716;
+    text-align: center;
+    padding: 10px;
+    position:;
+    bottom: 0;
+    width: 100%;
+    background-color: #F8CB86;
+    border: 2px solid;
+    border-color: #4D2716;
+}

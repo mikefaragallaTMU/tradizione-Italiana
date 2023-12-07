@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MENU: Tradizione Italiane</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="themenu.css">
+
+</head>
+<body>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 50px;
+		}
+	</style>
+
+	<h1 id="menuTitle">MENU</h1>
+	<div id="feedbackMove">
+		<h2>Select Entree to Start:</h2>
+		<select id="menuSelect" onchange="displaySubtext('menuSelect', 'menuSubtext')"></select>
+		<p id="menuSubtext"></p>
+
+		<h2>Select Potential Dietary Restrictions:</h2>
+		<select id="foodGroupSelect" onchange="displaySubtext('foodGroupSelect', 'foodGroupSubtext')"></select>
+		<p id="foodGroupSubtext"></p>
+	</div>
+
+	<main class="container">
+		<div class="menu">
+			<h2 class="menu-group-heading">Entrée</h2>
+			<div class="menu-group">
+				<div class="menu-item">
+					<img
+					src="https://www.allrecipes.com/thmb/QSsjryxShEx1L6o0HLer1Nn4jwA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Bruschetta</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Toasted ciabatta topped with ripe tomatoes, fresh basil, and balsamic glaze.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://static01.nyt.com/images/2019/08/06/dining/lh-tomato-and-white-bean-salad/lh-tomato-and-white-bean-salad-articleLarge-v2.jpg?w=1280&q=75"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Garden of Naples Salad</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Mixed greens, cherry tomatoes, cucumber, and Kalamata olives with a lemon-oregano vinaigrette.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://i0.wp.com/houseofgandkrecipes.ca/wp-content/uploads/2023/07/IMG_0601.jpg?fit=1152%2C1536&ssl=1"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Capricciosa Caesar</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Crisp romaine lettuce tossed in Caesar dressing, topped with Parmesan shavings and homemade croutons.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<h2 class="menu-group-heading">Antipasti</h2>
+			<div class="menu-group">
+				<div class="menu-item">
+					<img
+					src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/vxreqwtp/57d79301-27ce-496a-adf7-5803fada5b8b.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Mamma Mia Bruschetta</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Toasted ciabatta topped with ripe tomatoes, fresh basil, and balsamic glaze.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://eatingtheworld.files.wordpress.com/2012/06/panelle.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Sicilian Street Food Sampler</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Arancini, supplì, and fried calamari served with zesty marinara sauce.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/01/vegetarian-caprese-tomato-towers.jpg?quality=82&strip=1"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Caprese Tower</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Layers of fresh mozzarella, vine-ripened tomatoes, and basil, drizzled with extra virgin olive oil.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<h2 class="menu-group-heading">Pizza Pazzia</h2>
+			<div class="menu-group">
+				<div class="menu-item">
+					<img
+					src="https://i.pinimg.com/736x/95/e3/21/95e321d1a3948c2e97243e5dd0690f68.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Quattro Formaggi Fiesta</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Nunc efficitur felis vel mi efficitur, sed molestie sem
+							scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+							tincidunt nulla.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://i0.wp.com/www.thursdaynightpizza.com/wp-content/uploads/2022/06/veggie-pizza-side-view-out-of-oven.png?resize=720%2C480&ssl=1"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Veggie Volcano</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Nunc efficitur felis vel mi efficitur, sed molestie sem
+							scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+							tincidunt nulla.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://www.ocalastyle.com/wp-content/uploads/2017/10/Mama-Mancinis-Meatball-Pizza-1024x683.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Meatball Mania</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Nunc efficitur felis vel mi efficitur, sed molestie sem
+							scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+							tincidunt nulla.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<h2 class="menu-group-heading">Primi Piatti</h2>
+			<div class="menu-group">
+				<div class="menu-item">
+					<img
+					src="https://www.vincenzosplate.com/wp-content/uploads/2016/11/timballo_1500x1500-scaled.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Nonna's Lasagna Twist</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Nunc efficitur felis vel mi efficitur, sed molestie sem
+							scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+							tincidunt nulla.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://s.inyourpocket.com/gallery/johannesburg/2021/07/mushroom%20gnocchi%20by%20pronto%20restaurant.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Gnocchi al Funghi</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Nunc efficitur felis vel mi efficitur, sed molestie sem
+							scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+							tincidunt nulla.
+						</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<img
+					src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/newscms/2022_51/1830641/pasta-queen-lemon-ricotta-kb-2x1-220118.jpg"
+					alt="Black Placeholder Image"
+					class="menu-item-img"
+					/>
+					<div class="menu-item-text">
+						<h3 class="menu-item-heading">
+							<span class="menu-item-name">Ravioli Ricotta Delight</span>
+							<span class="menu-item-price">$12.90</span>
+						</h3>
+						<p class="menu-item-desc">
+							Nunc efficitur felis vel mi efficitur, sed molestie sem
+							scelerisque. Fusce orci risus, congue eu mauris nec, pretium
+							tincidunt nulla.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<div id="navbar">
+        <div id="logo">
+            <a href="tradizione-italiana.html">
+                <h2 id="title">TRADIZIONE<br>ITALIANA</h2>
+            </a>
+        </div>
+        <div id="NavButtons">
+            <a class="learnMoreButtons" id="reserveButton" href="reservationstradizione.html">RESERVATIONS</a>
+            <a class="navPageButtons" href="contactuspage.html">CONTACT US</a>
+            <a class="navPageButtons" href="locationspage.html">LOCATIONS</a>
+            <a class="navPageButtons" href="themenu.html">MENU</a>
+            <a class="navPageButtons" href="about-us.html">OUR STORY</a>
+        </div>
+    </div>
+
+
+ <footer>
+        <p>&copy; 2023 Tradizione Italiana. All rights reserved. Created by Ryan Allen-Hallam, Maykel Faragalla, Aashana Dhingra, Sujay Rambajue, Iliana Mehmeti, Adesewa Ajomale </p>
+    </footer>
+
+<body>
+	<script>
+ // Sample data for menu items and food groups with corresponding subtext
+		const menuItems = [
+			{ name: "Bruschetta", subtext: "Toasted ciabatta topped with ripe tomatoes, fresh basil, and balsamic glaze." },
+			{ name: "Garden of Naples Salad", subtext: "Mixed greens, cherry tomatoes, cucumber, and Kalamata olives with a lemon-oregano vinaigrette." },
+			{ name: "Capricciosa Caesar", subtext: "Crisp romaine lettuce tossed in Caesar dressing, topped with Parmesan shavings and homemade croutons." },
+			{ name: "Entree Pasta", subtext: "Italian pasta with flavorful sauce, bite sized for kids" }
+			];
+
+		const foodGroups = [
+			{ name: "Vegan", subtext: "We have quick and convenient Vegan meals" },
+			{ name: "Gluten", subtext: "We have traditional Italian dishes that are Gluten Free" },
+			{ name: "Peanuts", subtext: "We have nutritious and balanced meals that do not have peanuts" },
+			{ name: "Vegitarian", subtext: "Just like for vegans, we have pleanty of Vegitarian dishes" }
+			];
+
+        // Function to populate a select dropdown with options and subtext
+		function populateDropdown(selectId, options, subtextId) {
+			const select = document.getElementById(selectId);
+			const subtext = document.getElementById(subtextId);
+
+            // Clear existing options and subtext
+			select.innerHTML = '';
+			subtext.textContent = '';
+
+            // Add new options with subtext
+			options.forEach(option => {
+				const optionElement = document.createElement('option');
+				optionElement.value = option.name;
+				optionElement.text = option.name;
+				select.appendChild(optionElement);
+			});
+		}
+
+        // Function to display subtext based on selected option
+		function displaySubtext(selectId, subtextId) {
+			const select = document.getElementById(selectId);
+			const subtext = document.getElementById(subtextId);
+
+			const selectedOption = select.options[select.selectedIndex].text;
+
+            // Find the selected option in the array and display subtext
+			const option = menuItems.concat(foodGroups).find(item => item.name === selectedOption);
+			subtext.textContent = option ? option.subtext : '';
+		}
+
+        // Call the populateDropdown function for menu items and food groups
+		populateDropdown('menuSelect', menuItems, 'menuSubtext');
+		populateDropdown('foodGroupSelect', foodGroups, 'foodGroupSubtext');
+	</script>
+</body>
+
+<script type="text/javascript">
+	
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("navbar").style.top = "0";
+		}
+		else {
+			document.getElementById("navbar").style.top = "-110px";
+		}
+	}
+
+</script>
+</html>

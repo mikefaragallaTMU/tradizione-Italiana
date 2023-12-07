@@ -1,0 +1,199 @@
+@font-face{
+	src: url(Fonts/Inlander-Texture.ttf);
+	font-family: inlander;
+}
+
+body{
+	background-color: #FFE0B2;
+	background-image: url(websiteBorder3.png);
+	background-size: 100%;
+	background-repeat: space repeat;
+}
+
+#pageBorder{
+	position: fixed;
+	left: 0px;
+	width: 95%;
+	height: 95%;
+	top: 0px;
+	margin left: 10px;
+	margin-right: 10px;
+	border: 10px;
+	border-image: url(websiteBorder.png);
+}
+
+#navbar {
+  filter: drop-shadow(1px 1px 10px);
+  overflow: hidden;
+  background-color: #F8CB86;
+  position: fixed; 
+  width: 100%; 
+  height: 100px;
+  top: -110px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  border: 2px solid;
+  border-color: #4D2716;
+  z-index: 10;
+}
+
+#logo{
+    float: left;
+    font-family: inlander;
+    line-height: 30px;
+    margin-top: -20px;
+    padding-left: 20px;
+    color: #4D2716;
+}
+
+#NavButtons{
+	float: right;
+	margin-top: 35px;
+}
+
+#navbar a {
+	padding-right:15px ;
+	padding-left: 15px;
+	padding-top: 7px;
+	padding-bottom: 7px ;
+  float: right;
+  display: block;
+  color: #4D2716;
+  text-align: center;
+  margin-right: 70px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Belleza', sans-serif;
+}
+
+	#navbar a:hover{
+		color: white;
+		background-color: #4D2716;
+	}
+
+#reserveButton {
+	border: 2px solid;
+	border-color: #4D2716;
+	padding: 1px;
+}
+
+.homeSections {
+	border: solid black;
+	position: relative;
+	width: 45%;
+	text-align: center;
+	font-family: 'Belleza', sans-serif;
+}
+
+.divLogos {
+}
+
+
+#tableImage{ 
+	float: right;
+margin-right: 120px;
+margin-top: 250px;
+}
+
+.reserveform{
+	margin-top: 250px;
+	margin-left: 120px;
+	width: 35%;
+
+}
+
+.reservebtn { float: left;
+	border:  2px solid black;
+	font-size: 20px;
+  width: 600px;
+  height: 60px;
+  padding: 10px 18px;
+  background-color: #5C4033;
+  font-family: 'Belleza', sans-serif;
+  
+}
+
+button {
+ 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#comments{ border:  2px solid #5C4033;
+	width: 560px;
+  height: 50px;
+  padding: 10px 18px;
+}
+
+#lefth{ border:  2px solid #5C4033;
+	width: 210px;
+  height: 10px;
+  padding: 10px 18px;
+}
+
+.righth{ border:  2px solid #5C4033;
+	width: 140px;
+  height: 40px;
+  padding: 10px 18px;
+}
+#lefth2{ border:  2px solid #5C4033;
+	width: 170px;
+  height: 10px;
+  padding: 10px 18px;
+}
+
+#righth2{ border:  2px solid #5C4033;
+	width: 170px;
+  height: 10px;
+  padding: 10px 18px;
+}
+
+#lefth3{ border:  2px solid #5C4033;
+	width: 200px;
+  height: 10px;
+  padding: 10px 18px;
+}
+
+#righth3{ border:  2px solid #5C4033;
+	width: 200px;
+  height: 10px;
+  padding: 10px 18px;
+}
+.container {
+	float: left;
+	margin-left: 50px;
+	margin-top: -210px;
+}
+#reservetext{
+	margin-top: 200px;
+	margin-left: 120px;
+}
+.error {
+      color: red;
+    }
+
+#peoplecomments{ border:  2px solid #5C4033;
+	width: 560px;
+  height: 50px;
+  padding: 10px 18px;
+}
+
+footer {
+    background-color: #333;
+    color: #4D2716;
+    text-align: center;
+    padding: 10px;
+    position:;
+    bottom: 0;
+    width: 100%;
+    background-color: #F8CB86;
+    border: 2px solid;
+    border-color: #4D2716;
+}

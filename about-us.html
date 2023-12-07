@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ABOUT US: Tradizione Italiane</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="tradizione-italiana.css">
+
+</head>
+<body>
+
+	<div id="aboutUsIntro">
+		<img src="AboutUsIMG/ScrollAndPenLogo.png" width="200px">
+		<h1 class="pageTitle">OUR STORY</h1>
+		<p id="aboutUsText">At Tradizione Italiana, our story is a tapestry woven with threads of heritage, passion, and an unwavering commitment to preserving the soul of Italian culinary artistry. Our journey began with a profound respect for the gastronomic traditions that define Italy, with each region contributing its own unique flavours and culinary nuances. As custodians of this rich heritage, we embarked on a mission to bring the essence of Italy to Toronto, creating a culinary sanctuary where tradition meets contemporary flair.<br> <br>
+		Our dedication extends beyond the kitchen; it's a testament to the artisans who infuse their craftsmanship into every dish. From the rustic simplicity of time-honoured pasta recipes to the sophisticated symphony of flavours in our meticulously crafted entrées, Tradizione Italiana is a canvas where culinary stories unfold. As you explore our narrative, you'll encounter the vibrant tapestry of Italy's diverse regions, each dish a chapter that resonates with the warmth and authenticity of the Italian way of life. Join us on this gastronomic odyssey, where every meal celebrates tradition, passion, and the finest ingredients.</p>
+	</div>
+
+	<div id="newsLetterButtonDiv">
+		<button id="newsLetterButton">JOIN OUR NEWS LETTER</button>	
+	</div>
+
+	<hr width="100px" size="10px" color="brown">
+
+
+	<div class="aboutUsSection" ="ourFood">
+		<div id="ourFoodIMG">
+			<img src="AboutUsIMG/ourfood2.jpg" width="100%">
+		</div>
+
+		<div id="ourFoodTXT">
+			<h2 class="aboutUsSectionTitle" ">OUR FOOD </h2>
+			<p class="aboutUsSectionText">Savour the rustic simplicity of classic pasta dishes and the sophistication of meticulously crafted entrées. Each bite tells a story of tradition, passion, and the finest ingredients, inviting you on a culinary journey through Italy's diverse regions.</p>
+		</div>
+	</div>
+
+	<div class="aboutUsSection" ="ourFood">
+
+		<div id="ourFoodTXT2">
+			<h2 class="aboutUsSectionTitle" ">OUR HISTORY </h2>
+			<p class="aboutUsSectionText">Immerse yourself in Tradizione Italiana's rich history, where meticulously crafted recipes, passed through generations, tell tales of heritage. From humble beginnings to becoming a culinary landmark in Toronto, our journey unfolds in spaces that blend Italian trattoria charm with a modern twist, inviting you into the timeless allure of Italy.</p>
+		</div>
+
+		<div id="ourFoodIMG2">
+			<img src="AboutUsIMG/ourhistory2.jpg" width="100%">
+		</div>
+	</div>
+
+	
+	<div id="navbar">
+        <div id="logo">
+            <a href="tradizione-italiana.html">
+                <h2 id="title">TRADIZIONE<br>ITALIANA</h2>
+            </a>
+        </div>
+        <div id="NavButtons">
+            <a class="learnMoreButtons" id="reserveButton" href="reservationstradizione.html">RESERVATIONS</a>
+            <a class="navPageButtons" href="contactuspage.html">CONTACT US</a>
+            <a class="navPageButtons" href="locationspage.html">LOCATIONS</a>
+            <a class="navPageButtons" href="themenu.html">MENU</a>
+            <a class="navPageButtons" href="about-us.html">OUR STORY</a>
+        </div>
+    </div>
+
+
+	<div class="signUpOverlay">
+		<div class="signUpInputs">
+			<button id="closeOverlayButton">X</button>	
+			<h1 id="signUpHereTitle">SIGN UP HERE</h1>
+
+			<input id="fullName" class="textInputFields" type="text" placeholder="Enter Full Name">
+			<input id="email" class="textInputFields" type="text" placeholder="Enter Email Address">
+			<br>
+			<input type="checkbox" id="iAccept">
+			<label  id="iAcceptLabel" for="iAccept">By clicking here, I state that I have read and understood the terms and conditions. </label>
+			<br>
+			<button id="finishSignUp"> SUBMIT FORM </button>
+
+		</div>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	// When the user scrolls down 20px from the top of the document, slide down the navbar
+	// When the user scrolls to the top of the page, slide up the navbar (100px out of the top view)
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("navbar").style.top = "0";
+		}
+		else {
+			document.getElementById("navbar").style.top = "-110px";
+		}
+	}
+
+	var newsLetterButton = document.querySelector("#newsLetterButton");
+	var popUpDisplay = document.querySelector(".signUpOverlay");
+
+	var nameInput = document.querySelector("#fullName");
+	var emailInput = document.querySelector("#email");
+
+
+	var closeOverlayButton = document.querySelector("#closeOverlayButton");
+	var iAcceptButton = document.querySelector("#iAccept");
+	var finishSignUpButton = document.querySelector("#finishSignUp");
+
+
+
+	newsLetterButton.addEventListener("click", showOverlay);
+	closeOverlayButton.addEventListener("click", hideOverlay);
+	finishSignUpButton.addEventListener("click", finishSignUp);
+
+	function showOverlay(){
+		popUpDisplay.style.display = "block";
+	}
+
+	function hideOverlay(){
+		popUpDisplay.style.display = "none";
+	}
+
+	function finishSignUp(){
+		if (iAcceptButton.checked == false){
+			alert("You must accept terms and conditions before proceeding");
+
+		} else if (nameInput.value === ""){
+			alert("Please enter your name");
+
+		} else if (emailInput.value === ""){
+			alert("please enter your email address");
+		} else{
+			alert("Thank you for registering for our news letter!")
+			popUpDisplay.style.display = "none";
+		}
+	}
+
+	
+
+</script>
+</html>
